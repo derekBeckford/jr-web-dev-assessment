@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#home").show();
+  //$("#home").show();
 
   $("nav a").click(function (e) {
     e.preventDefault();
