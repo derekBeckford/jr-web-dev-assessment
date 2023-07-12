@@ -14,39 +14,38 @@
     <title>Web Dev Adventures</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-darken-md">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-darken-md d-flex justify-content-between">
+      <ul class="navbar-nav ml-20">
+        <li class="nav-item nav-link">
+          <a class="text-decoration-none text-white nav-item" href="#home">Home</a>
+        </li>
+        <li class="nav-item nav-link">
+          <a class="text-decoration-none text-white nav-item" href="#product">Product</a>
+        </li>
+        <li class="nav-item nav-link">
+          <a class="text-decoration-none text-white nav-item" href="#about">About Us</a>
+        </li>
+        <li class="nav-item nav-link">
+          <a class="text-decoration-none text-white nav-item" href="#contact">Contact Us</a>
+        </li>
+      </ul>
       <ul class="navbar-nav">
         <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#home"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#product"
-            >Product</a
-          >
-        </li>
-        <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#about"
-            >About Us</a
-          >
-        </li>
-        <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#contact"
-            >Contact Us</a
-          >
+          <button id="toggleButton" class="btn btn-light">Toggle Dark/Light Mode</button>
         </li>
       </ul>
     </nav>
+    <section>
+      <img class="banner" src="assets/stockholm.jpg" />
+    </section>
 
     <section>
-      <div id="home" class="section">
-        <p>Hero photo here</p>
+      <div id="home" class="section"></div>
+        <div id="product" class="section">
+          <h1 class="my-4 text-center">Products Section</h1>
+        </div>
       </div>
-      <div id="product" class="section">
-        <p>Product here</p>
-      </div>
-      <div id="about">
+      <div id="about" class="section">
         <h1 class="text-center">About Us</h1>
         <p class="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -114,8 +113,38 @@
           pellentesque elit ullamcorper. Amet justo donec enim diam.
         </p>
       </div>
-      <div id="contact" class="section">
-        <p>contact info here</p>
+      <div id="contact" class="section contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <div class="form-section">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-section">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-section">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </section>
 
