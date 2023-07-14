@@ -20,19 +20,19 @@
   ## Description   
   📝
   
-  This is a single page website built using HTML, CSS, and JavaScipt. It utilized JQuery and Bootstrap for styling and logc.
+  This is a single-page website built using HTML, CSS, and javascript. It utilized JQuery and Bootstrap for styling and logic.
 
 
   ## Usage 
   💻
   
-  A way to show off my front-end coding skills and DOM manipulation skills using jquery and bootstrap. 
+  A way to show off my front-end coding skills/DOM manipulation skills using JQuery and Bootstrap. 
 
   
   ## Future  
   ⏩
   
-  I would just changes some of the styles and maybe add some cool css animations. 
+  I would just change some of the styles and maybe add some cool CSS animations. 
 
   
   ## Contact
