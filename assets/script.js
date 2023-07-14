@@ -123,3 +123,8 @@ function updateToggleButton(isDarkMode) {
   const toggleButton = $("#toggleButton");
   toggleButton.text(isDarkMode ? "Light Mode" : "Dark Mode");
 }
+
+$("#contact").submit(function (e) {
+  e.preventDefault();
+  alert("Thank you! Someone will contact you soon.");
+});
