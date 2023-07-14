@@ -26,11 +26,10 @@ https://derekbeckford.github.io/jr-web-dev-assessment/
   Key Features:
 
   - Hero/Banner image for an eye-catching introduction
-  - Responsive layout using the Bootstrap Grid System
   - Products section with two rows of four items
   - Contact Us section with three input fields (HTML only)
-  - Dark Mode and Light Mode toggle button (JavaScript and jQuery)
-  - Feel free to customize and expand the description as per your specific implementation details and additional features.
+  - Dark Mode and Light Mode toggle buttons (JavaScript and jQuery)
+  - The page retains users' preferred Dark Mode or Light Mode settings by saving them in local storage, allowing for persistence even when the page is reloaded
 
 
   ## Usage 
@@ -42,10 +41,10 @@ https://derekbeckford.github.io/jr-web-dev-assessment/
     To switch between Dark Mode and Light Mode, click on the "Dark/Light Mode" button located in the navigation bar. This button toggles the website's appearance between the two modes.
 
   - Products Section
-    In the Products section, you'll find two rows of four items. Each item represents a product or placeholder content. Feel free to customize the content and images as per your needs.
+    In the Products section, you'll find two rows of four items. Each item represents placeholder content. 
 
   - Contact Us Section
-    The Contact Us section includes three input fields for capturing user information. Use the fields to enter your name, email, and message. Submit the form to send the message.
+    The Contact Us section includes three input fields for capturing user information. 
 
   
   ## Future  
