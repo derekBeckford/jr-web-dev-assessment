@@ -1,5 +1,7 @@
 # Jr Web Dev Assessment
 
+https://derekbeckford.github.io/jr-web-dev-assessment/
+
   ![badge](https://img.shields.io/badge/license-npm-brightgreen) </br>
 
   ![image](https://github.com/derekBeckford/jr-web-dev-assessment/assets/82908627/77cd0ee7-6f08-414d-978d-8daa7d6aefc1)
