@@ -3,46 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
     <title>Web Dev Adventures</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+    <script src="assets/script.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-darken-md d-flex justify-content-between">
-      <ul class="navbar-nav ml-20">
-        <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#home">Home</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-decoration-none text-white" href="#home">Home</a>
         </li>
-        <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#product">Product</a>
+        <li class="nav-item">
+          <a class="nav-link text-decoration-none text-white" href="#product">Product</a>
         </li>
-        <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#about">About Us</a>
+        <li class="nav-item">
+          <a class="nav-link text-decoration-none text-white" href="#about">About Us</a>
         </li>
-        <li class="nav-item nav-link">
-          <a class="text-decoration-none text-white nav-item" href="#contact">Contact Us</a>
+        <li class="nav-item">
+          <a class="nav-link text-decoration-none text-white" href="#contact">Contact Us</a>
         </li>
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item nav-link">
-          <button id="toggleButton" class="btn btn-light">Toggle Dark/Light Mode</button>
+        <li class="nav-item">
+          <button id="toggleButton" class="btn btn-light mr-2">Dark Mode</button>
         </li>
       </ul>
     </nav>
     <section>
-      <img class="banner" src="assets/stockholm.jpg" />
+      <img class="banner" src="assets/stockholm.jpg" alt="Banner" />
     </section>
 
     <section>
-      <div id="home" class="section"></div>
+      <div id="home" class="section">
+        <h1 class="my-4 text-center">Home</h1>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis
+          risus sed vulputate odio ut enim. Nullam non nisi est sit amet
+          facilisis magna. Aenean sed adipiscing diam donec adipiscing tristique
+          risus nec feugiat. In aliquam sem fringilla ut morbi tincidunt augue
+          interdum velit. Justo eget magna fermentum iaculis eu non diam
+          phasellus vestibulum. Mi bibendum neque egestas congue quisque.
+          Condimentum vitae sapien pellentesque habitant morbi tristique
+          senectus et. Tempor id eu nisl nunc mi ipsum faucibus. Et sollicitudin
+          ac orci phasellus. Odio ut enim blandit volutpat maecenas. Tortor
+          vitae purus faucibus ornare suspendisse sed. Sit amet massa vitae
+          tortor. Dui nunc mattis enim ut tellus elementum. Sed elementum tempus
+          egestas sed sed risus pretium quam. Augue eget arcu dictum varius duis
+          at consectetur. In est ante in nibh mauris cursus. Massa tempor nec
+          feugiat nisl pretium fusce id. Interdum velit euismod in pellentesque
+          massa placerat duis ultricies lacus. At in tellus integer feugiat
+          scelerisque varius morbi enim. At tellus at urna condimentum mattis.
+          In metus vulputate eu scelerisque felis imperdiet proin. Est ultricies
+          integer quis auctor elit sed vulputate mi sit. Tortor condimentum
+          lacinia quis vel eros donec ac odio tempor. Purus sit amet luctus
+          venenatis. Diam vulputate ut pharetra sit amet aliquam id. Enim sit
+          amet venenatis urna cursus eget nunc scelerisque viverra. Vulputate
+          enim nulla aliquet porttitor lacus. Arcu bibendum at varius vel
+          pharetra vel. Pellentesque habitant morbi tristique senectus et netus
+          et. Dictumst quisque sagittis purus sit. Morbi tincidunt ornare massa
+          eget egestas. Porta non pulvinar neque laoreet suspendisse interdum
+          consectetur. Dictum fusce ut placerat orci. Tempus quam pellentesque
+          nec nam aliquam sem. Parturient montes nascetur ridiculus mus. Sit
+          amet massa vitae tortor condimentum. Sit amet volutpat consequat
+          mauris nunc congue nisi vitae suscipit. Duis ultricies lacus sed
+          turpis. Sed libero enim sed faucibus. Elementum curabitur vitae nunc
+          sed velit dignissim. Rhoncus urna neque viverra justo nec ultrices.
+          Vitae turpis massa sed elementum tempus egestas sed. Neque egestas
+          congue quisque egestas. Nec feugiat in fermentum posuere urna. Semper
+          quis lectus nulla at volutpat diam. Sed velit dignissim sodales ut.
+          Duis tristique sollicitudin nibh sit amet commodo. Commodo odio aenean
+          sed adipiscing diam donec adipiscing. Erat imperdiet sed euismod nisi.
+          Lorem mollis aliquam ut porttitor leo. Netus et malesuada fames ac
+          turpis egestas sed. Non sodales neque sodales ut etiam sit. Tristique
+          senectus et netus et malesuada fames ac turpis egestas. In aliquam sem
+          fringilla ut morbi tincidunt augue. Urna et pharetra pharetra massa.
+          Cursus in hac habitasse platea dictumst quisque sagittis purus sit.
+          Felis eget velit aliquet sagittis id consectetur. Massa eget egestas
+          purus viverra accumsan in nisl nisi scelerisque. Sodales neque sodales
+          ut etiam sit amet nisl purus. Sed risus ultricies tristique nulla
+          aliquet enim tortor at auctor. Eu consequat ac felis donec et odio
+          pellentesque diam. Eu non diam phasellus vestibulum lorem. Nunc eget
+          lorem dolor sed. Faucibus in ornare quam viverra orci sagittis eu
+          volutpat. Feugiat in fermentum posuere urna nec tincidunt praesent
+          semper feugiat. Tristique senectus et netus et malesuada fames ac
+          turpis egestas. Elementum nisi quis eleifend quam adipiscing vitae
+          proin. Lorem ipsum dolor sit amet consectetur adipiscing elit duis
+          tristique. Nullam vehicula ipsum a arcu cursus vitae congue mauris.
+          Fringilla urna porttitor rhoncus dolor. Sit amet est placerat in
+          egestas erat imperdiet sed. Et egestas quis ipsum suspendisse ultrices
+          gravida dictum. Purus ut faucibus pulvinar elementum. Mauris nunc
+          congue nisi vitae suscipit. Elit ullamcorper dignissim cras tincidunt
+          lobortis feugiat vivamus at. Metus aliquam eleifend mi in nulla
+          posuere sollicitudin aliquam ultrices. Bibendum arcu vitae elementum
+          curabitur vitae nunc. Quam lacus suspendisse faucibus interdum posuere
+          lorem ipsum dolor. Ut tortor pretium viverra suspendisse potenti
+          nullam. Hac habitasse platea dictumst vestibulum rhoncus est
+          pellentesque elit ullamcorper. Amet justo donec enim diam.
+        </p>
+      </div>
         <div id="product" class="section">
-          <h1 class="my-4 text-center">Products Section</h1>
+          <h1 class="my-4 text-center">Products</h1>
         </div>
       </div>
       <div id="about" class="section">
@@ -118,37 +183,19 @@
         <form id="contact-form">
           <div class="form-section">
             <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              required
-            />
+            <input type="text" id="name" placeholder="Enter your name" required />
           </div>
           <div class="form-section">
             <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
+            <input type="email" id="email" placeholder="Enter your email" required />
           </div>
           <div class="form-section">
             <label for="message">Message</label>
-            <textarea
-              id="message"
-              rows="5"
-              placeholder="Enter your message"
-              required
-            ></textarea>
+            <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>
       </div>
     </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="assets/script.js"></script>
   </body>
 </html>

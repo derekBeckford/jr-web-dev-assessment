@@ -12,26 +12,25 @@ class ProductRenderer {
   }
 
   render(product) {
-    // If counter is 0, create a new row
     if (this.counter === 0) {
-      const row = `<div class="row m-5" id="row-${Date.now()}"></div>`;
+      const row = $("<div>")
+        .addClass("row m-5")
+        .attr("id", `row-${Date.now()}`);
       $(`#${this.containerId}`).append(row);
     }
 
     const html = `
-        <div class="col shadow p-3 mb-5 rounded">
-            <img style="width: 300px; height: 300px;" class="rounded mx-auto d-block pb-2" src="${product.image}" alt="" />
-            <p class="text-center">${product.description}</p>
-        </div>
+      <div class="col shadow p-3 mb-5 rounded">
+          <img style="width: 300px; height: 300px;" class="rounded mx-auto d-block pb-2" src="${product.image}" alt="" />
+          <p class="text-center">${product.description}</p>
+      </div>
     `;
 
-    // Append to the last row
-    $(`#${this.containerId} .row:last-child`).append(html);
+    const lastRow = $(`#${this.containerId} .row:last-child`);
+    lastRow.append(html);
 
-    // Increment counter
     this.counter++;
 
-    // If counter reaches 4, reset it to 0
     if (this.counter === 4) {
       this.counter = 0;
     }
@@ -40,7 +39,6 @@ class ProductRenderer {
 
 const renderer = new ProductRenderer("product");
 
-// Array of products
 const products = [
   new Product(
     "assets/skyline1.jpg",
@@ -76,31 +74,28 @@ const products = [
   ),
 ];
 
-// Render all products
-for (let product of products) {
+products.forEach((product) => {
   renderer.render(product);
-}
+});
 
-$(document).ready(function () {
+$(document).ready(() => {
   $("#home").show();
 
-  // Toggle Dark/Light Mode
-  $("#toggleButton").click(function () {
+  $("#toggleButton").click(() => {
     $("body").toggleClass("dark-mode");
-    var isDarkMode = $("body").hasClass("dark-mode");
+    const isDarkMode = $("body").hasClass("dark-mode");
     updateNavbar(isDarkMode);
     localStorage.setItem("darkMode", isDarkMode);
   });
 
-  $("nav a").click(function (e) {
+  $("nav a").click((e) => {
     e.preventDefault();
-    var page = $(this).attr("href");
+    const page = $(e.target).attr("href");
     $(".section").hide();
     $(page).show();
   });
 
-  // Check if dark mode preference is stored in local storage
-  var storedDarkMode = localStorage.getItem("darkMode");
+  const storedDarkMode = localStorage.getItem("darkMode");
   if (storedDarkMode === "true") {
     $("body").addClass("dark-mode");
     updateNavbar(true);
@@ -114,13 +109,17 @@ function updateNavbar(isDarkMode) {
     navbar
       .removeClass("navbar-light bg-primary")
       .addClass("navbar-dark bg-dark");
-    toggleButton.removeClass("btn-light");
-    toggleButton.addClass("btn-dark");
+    toggleButton.removeClass("btn-light").addClass("btn-secondary");
   } else {
     navbar
       .removeClass("navbar-dark bg-dark")
       .addClass("navbar-light bg-primary");
-    toggleButton.removeClass("btn-dark");
-    toggleButton.addClass("btn-light");
+    toggleButton.removeClass("btn-secondary").addClass("btn-light");
   }
+  updateToggleButton(isDarkMode);
+}
+
+function updateToggleButton(isDarkMode) {
+  const toggleButton = $("#toggleButton");
+  toggleButton.text(isDarkMode ? "Light Mode" : "Dark Mode");
 }
